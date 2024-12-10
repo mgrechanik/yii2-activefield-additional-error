@@ -1,5 +1,5 @@
 {
-    "name": "mgrechanik/yii2-activefield-additional-error ",
+    "name": "mgrechanik/yii2-activefield-additional-error",
     "description": "Adding special span to activefield with bootstrap error class .is-invalid to desired place of field template",
     "type": "library",
     "keywords": ["ActiveForm", "ActiveField", "validation", "bootstrap 4", "bootstrap 5", 
