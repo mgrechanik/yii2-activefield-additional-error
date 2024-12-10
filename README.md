@@ -66,7 +66,7 @@ use mgrechanik\additionalerror\AdditionalErrorBehavior;
             // Adding this hidden span before error block 
             'template' => "{label}\n{input}\n{hint}\n" . $form->getAdditionalErrorSpan($model, 'datetime') . "\n{error}"
     ])->hint('Some hint')
-      ->widget(/* Some complicated widget create wrapper for {input} part... */)
+      ->widget(/* Some complicated widget creates a wrapper for the {input} part... */)
 ```
 
 It will work for both server and client side.
