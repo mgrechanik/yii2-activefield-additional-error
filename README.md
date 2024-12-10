@@ -1,4 +1,4 @@
-# Adding a special span to activefield with bootstrap error class .is-invalid to desired place of field template
+# Additional span with error class for ActiveField
 
 ## What is it about? <span id="demo"></span>
 
