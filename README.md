@@ -1,4 +1,4 @@
-# Adding special span to activefield with bootstrap error class .is-invalid to desired place of field template
+# Adding a special span to activefield with bootstrap error class .is-invalid to desired place of field template
 
 ## What is it about? <span id="demo"></span>
 
@@ -9,7 +9,7 @@ Bootstrap 4 and 5 are expecting html like this to decorate validation error:
 <div class="invalid-feedback">Error message</div>
 ```
 
-Element with ```div.invalid-feedback``` is supposed to be on the same level with your input.is-invalid.
+Element with ```div.invalid-feedback``` is supposed to be on the same level with your ```input.is-invalid```.
 
 But sometimes when we are using any widgets or custom template we get html like this:
 
@@ -60,9 +60,8 @@ use mgrechanik\additionalerror\AdditionalErrorBehavior;
             'as adderror' => [
                 'class' => AdditionalErrorBehavior::class,
             ]
-
     ]); ?>
-
+...
     <?= $form->field($model, 'datetime', [
             // Adding this hidden span before error block 
             'template' => "{label}\n{input}\n{hint}\n" . $form->getAdditionalErrorSpan($model, 'datetime') . "\n{error}"
@@ -70,5 +69,6 @@ use mgrechanik\additionalerror\AdditionalErrorBehavior;
       ->widget(/* ...*/)
 ```
 
+It will work for both server side and client side
 
 
