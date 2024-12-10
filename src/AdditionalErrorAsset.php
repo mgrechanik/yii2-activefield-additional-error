@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
  */
 class AdditionalErrorAsset extends AssetBundle
 {
-    public $sourcePath = '@mgrechanik/additionalerror/res';
+    public $sourcePath = '@vendor/mgrechanik/yii2-activefield-additional-error/src/res';
 
     public $js = [
         'additional_error.js',

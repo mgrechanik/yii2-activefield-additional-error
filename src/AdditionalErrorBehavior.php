@@ -44,9 +44,9 @@ class AdditionalErrorBehavior extends Behavior
             'mgrechanik_setAttributeListener("' . Html::encode($this->owner->id)
             . '", "' .  Html::encode($attribute) . '" );', View::POS_READY);
 
-        return
-            '<span id="' .  Html::encode($this->owner->id)
-            . '-' .  Html::encode($attribute) . '" class="d-none '
-            .  ($model->hasErrors($attribute) ? 'is-invalid' : '') . '"></span>';
+        return Html::tag('span', '', [
+            'id' => $this->owner->id . '-' . $attribute,
+            'class' => 'd-none ' .  ($model->hasErrors($attribute) ? 'is-invalid' : '')
+        ]);
     }
 }
