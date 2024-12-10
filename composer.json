@@ -1,0 +1,26 @@
+{
+    "name": "mgrechanik/yii2-activefield-additional-error ",
+    "description": "Adding special span to activefield with bootstrap error class .is-invalid to desired place of field template",
+    "type": "library",
+    "keywords": ["ActiveForm", "ActiveField", "validation", "bootstrap 4", "bootstrap 5", 
+        "fix error", "yii2", "php"],
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "mgrechanik\\additionalerror\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mikhail Grechanik",
+            "email": "mike.grechanik@gmail.com"
+        }
+    ],
+    "support": {
+            "issues": "https://github.com/mgrechanik/yii2-activefield-additional-error/issues?state=open",
+            "source": "https://github.com/mgrechanik/yii2-activefield-additional-error"
+    },    
+    "require": {
+        "php": ">=7.3.0"
+    }
+}
