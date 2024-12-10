@@ -2,7 +2,7 @@
 
 ## What is it about? <span id="demo"></span>
 
-Bootstrap 4 and 5 are expecting html like this to decorate validation error:
+Bootstrap 4 and 5 are expecting ```html``` like this to decorate validation error:
 
 ```html
 <input type="text" id="eventform-datetime" class="form-control is-invalid" name="EventForm[datetime]" aria-required="true">
@@ -19,13 +19,13 @@ But sometimes when we are using any widgets or custom template we get html like 
 </div>  
 <div class="invalid-feedback">Error message</div>
 ```
-, so our error message is not shown.
+, so **our error message is not shown**.
 
 Of cource you can make ```div.invalid-feedback``` visible by css for this page.
 
 But if that does not suit you, this library propose another solution.
 
-We are adding special ```<span>``` to a field template right before ```{error}``` part. And we synchronize this span with the input field so it gets ```.is-invalid``` class when input does 
+We are adding special ```<span>``` to a field template right before ```{error}``` part. And we **synchronize** this span with the input field so it gets ```.is-invalid``` class when input does 
 
 
 ## Installing <span id="installing"></span>
@@ -61,14 +61,14 @@ use mgrechanik\additionalerror\AdditionalErrorBehavior;
                 'class' => AdditionalErrorBehavior::class,
             ]
     ]); ?>
-...
+
     <?= $form->field($model, 'datetime', [
             // Adding this hidden span before error block 
             'template' => "{label}\n{input}\n{hint}\n" . $form->getAdditionalErrorSpan($model, 'datetime') . "\n{error}"
     ])->hint('Some hint')
-      ->widget(/* ...*/)
+      ->widget(/* Some complicated widget create wrapper for {input} part... */)
 ```
 
-It will work for both server side and client side
+It will work for both server and client side.
 
 
