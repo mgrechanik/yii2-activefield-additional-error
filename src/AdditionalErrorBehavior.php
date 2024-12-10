@@ -13,7 +13,7 @@ use yii\web\View;
  * This behavior is supposed to be attached to ActiveForm
  *
  * Class AdditionalErrorBehavior
- * @package mgrechanik\additionalerror
+ * @package mgrechanik/yii2-activefield-additional-error
  */
 class AdditionalErrorBehavior extends Behavior
 {

@@ -25,7 +25,7 @@ Of cource you can make ```div.invalid-feedback``` visible by css for this page.
 
 But if that does not suit you, this library propose another solution.
 
-We are adding special ```<span>``` to a field template right before ```{error}``` part. And we **synchronize** this span with the input field so it gets ```.is-invalid``` class when input does 
+We are adding special ```<span>``` to a field template right before ```{error}``` part. And we **synchronize** this ```<span>``` with the **input field** so it gets ```.is-invalid``` class when **input** does 
 
 
 ## Installing <span id="installing"></span>
@@ -47,7 +47,7 @@ to the require section of your `composer.json`.
 
 ## How to use  <span id="use"></span> 
 
-in your ```view``` file, say it ```_form.php```
+in your ```view``` file, say it is ```_form.php```
 
 ```php
 use mgrechanik\additionalerror\AdditionalErrorBehavior;
